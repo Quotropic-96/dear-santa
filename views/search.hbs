@@ -1,0 +1,7 @@
+<h3>Results by: {{query}}</h3>
+
+{{#if present}}
+    {{>presentPartial present}}
+    {{else}}
+    <p>Oooops... I didn't find anything by {{query}}. <a href="/presents">Go back</a></p>
+{{/if}}

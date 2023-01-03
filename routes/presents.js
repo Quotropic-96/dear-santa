@@ -13,6 +13,18 @@ router.get('/', async (req, res, next) => {
   }
 });
 
+/* GET search results */
+// ROUTE: /presents/search
+router.get('/search', async (req, res, next) => {
+  const { name } = req.query;
+  try {
+    const present = await Present.findOne({ name });
+    res.render('search', { query: name, present: present });
+  } catch (error) {
+    next(error);
+  }
+})
+
 /* GET new present page */
 // ROUTE: /presents/new 
 router.get('/new', (req, res, next) => {
