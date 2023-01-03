@@ -17,6 +17,7 @@ mongoose.connect(MONGO_URL)
     return Present.insertMany(data);
   })
   .then((insertedItems => {
-    insertedItems.forEach(present => console.log(present));
+    insertedItems.forEach(present => console.log(present.name));
   }))
+  .then(() => mongoose.connection.close())
   .catch(err => console.error(err));
