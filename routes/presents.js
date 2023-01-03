@@ -21,13 +21,15 @@ router.get('/new', (req, res, next) => {
 
 /* POST new present to db */
 // ROUTE: /presents/new 
-// router.post('/new', async (req, res, next) => {
-//   try {
-    
-//   } catch (error) {
-//     next(error);
-//   }
-// })
+router.post('/new', async (req, res, next) => {
+  const { name, image, price, recipient, description } = req.body;
+  try {
+    const createdPresent = await Present.create({ name, image, price, recipient, description });
+    res.redirect(`/presents/${createdPresent._id}`);
+  } catch (error) {
+    next(error);
+  }
+})
 
 /* GET present details page */
 // ROUTE: /presents/:id 
