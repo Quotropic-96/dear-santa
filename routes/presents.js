@@ -31,6 +31,20 @@ router.post('/new', async (req, res, next) => {
   }
 })
 
+/* GET delete request */
+// ROUTE: /presents/delete/:id
+router.get('/delete/:id', async (req, res, next) => {
+  // why doesn't it work like this?
+  // const { presentId } = req.params;
+  const { id } = req.params
+  try {
+    await Present.findByIdAndDelete(id);
+    res.redirect('/presents');   
+  } catch (error) {
+    next(error);
+  }
+})
+
 /* GET present details page */
 // ROUTE: /presents/:id 
 router.get('/:presentId', async (req, res, next) => {
