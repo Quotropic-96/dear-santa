@@ -1,5 +1,12 @@
-<h2>{{this.name}}</h2>
-<img width="150px" src={{this.image}} alt="Present image">
-<p>Price: {{this.price}}</p>
-<p>Recipient: {{this.recipient}}</p>
-<p>Description: {{this.description}}</p>
+<div class="page" id="detail-page">
+    <div class="detail-title">
+        <h2>{{this.name}}</h2>
+        <img src={{this.image}} alt="Present image">
+    </div>
+    <div class="detail-content">
+        <p>Price: {{this.price}}</p>
+        <p>Recipient: {{this.recipient}}</p>
+        <p>Description: {{this.description}}</p>
+        <a href="/presents" class="go-back-btn">Go back to the list</a>
+    </div>
+</div>

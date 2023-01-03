@@ -133,3 +133,31 @@ nav a {
 .search-content a {
   color: #28231D;
 }
+
+/* Detail Page */
+#detail-page {
+  display: flex;
+}
+.detail-title {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+  margin: 40px;
+}
+.detail-title img {
+  width: 100%;
+}
+.detail-content {
+  margin-top: 5%;
+  width: 50%;
+  padding: 40px;
+  font-size: 1.2rem;
+}
+.go-back-btn {
+  text-decoration: none;
+  background-color: rgb(189, 191, 100);
+  padding: 10px;
+  border-radius: 5px;
+  color: #28231D;
+}
