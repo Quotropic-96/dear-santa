@@ -1,8 +1,36 @@
+/* Layout */
 body {
-  padding: 50px;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+}
+nav {
+  height: 10%;
+  padding-left: 30px;
+  background-color: rgba(32,80,110,.7);
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+nav a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-a {
-  color: #00B7FF;
+/* Home Page */
+#home-page {
+  background-image: url('/images/grinch.jpeg');
+  height: 90%;
 }
+h1 {
+  margin: 0;
+  font-size: 5rem;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.intro-text {
+  font-size: 1.5rem;
+  margin-left: 3%;
+}
+
