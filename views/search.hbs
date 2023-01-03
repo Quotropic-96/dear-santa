@@ -1,7 +1,11 @@
-<h3>Results by: {{query}}</h3>
-
-{{#if present}}
-    {{>presentPartial present}}
-    {{else}}
-    <p>Oooops... I didn't find anything by {{query}}. <a href="/presents">Go back</a></p>
-{{/if}}
+<div class="page" id="search-page">
+    <div class="search-content">
+        <h3>Results by: {{query}}</h3>
+        {{#if present}}
+            {{>presentPartial present}}
+            {{else}}
+            <p>Oooops... I didn't find anything by {{query}}. <a href="/presents">Go back</a></p>
+        {{/if}}
+    </div>
+    <img src="/images/footer.jpeg" alt="The grinch observing a town" class="footer">
+</div>
