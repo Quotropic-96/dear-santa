@@ -14,7 +14,10 @@ const presentSchema = new Schema({
         type: Number,
         min: 0
     },
-    recipient: String,
+    recipient: {
+        type: String,
+        required: true
+    },
     description: String
 });
 

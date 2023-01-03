@@ -2,7 +2,8 @@ const express = require('express');
 const Present = require('../models/Present');
 const router = express.Router();
 
-/* GET home page. */
+/* GET present list page. */
+// ROUTE: /presents
 router.get('/', async (req, res, next) => {
   try {
     const presents = await Present.find({});
@@ -12,6 +13,24 @@ router.get('/', async (req, res, next) => {
   }
 });
 
+/* GET new present page */
+// ROUTE: /presents/new 
+router.get('/new', (req, res, next) => {
+  res.render('newPresent');
+})
+
+/* POST new present to db */
+// ROUTE: /presents/new 
+// router.post('/new', async (req, res, next) => {
+//   try {
+    
+//   } catch (error) {
+//     next(error);
+//   }
+// })
+
+/* GET present details page */
+// ROUTE: /presents/:id 
 router.get('/:presentId', async (req, res, next) => {
   const { presentId } = req.params;
   try {
