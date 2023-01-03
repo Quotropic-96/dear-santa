@@ -1,13 +1,13 @@
-<div id="presents-list-page">
-    <img src="/images/grinch2.pg" alt="Grinch picture">
+<div id="presents-list-page" class="page">
+    <img class="grinch-pic" src="/images/grinch2.png" alt="Grinch picture">
     <div class="list-content">
         <h1>Presents List</h1>
         <form action="/presents/search" method="get">
-            <label>Search for a present in the list by it's name</label>
+            <label>Search for present by name</label>
             <input type="text" name="name" placeholder="iPhone">
             <button type="submit">Search</button>
         </form>
-        <div id="present-list">
+        <div class="present-list">
             {{#each presents}}
                 {{>presentPartial this}}
             {{/each}}
