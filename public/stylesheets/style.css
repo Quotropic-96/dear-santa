@@ -130,9 +130,6 @@ nav a {
 .search-content p {
   font-size: 1.2rem;
 }
-.search-content a {
-  color: #28231D;
-}
 
 /* Detail Page */
 #detail-page {
@@ -160,4 +157,37 @@ nav a {
   padding: 10px;
   border-radius: 5px;
   color: #28231D;
+}
+
+/* New Present Page */
+#new-present-page {
+  display: flex;
+}
+.new-present-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+  align-items: center;
+}
+.new-present-content h1 {
+  font-size: 3rem;
+}
+.new-present-content form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  line-height: 40px;
+}
+.new-present-content form label {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.new-present-content form button {
+  margin-top: 60px;
+  width: 50%;
+  height: 70px;
+  font-size: 1.3rem;
+  border: 0;
+  align-self: center;
 }

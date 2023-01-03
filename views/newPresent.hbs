@@ -1,15 +1,19 @@
-<h2>New Present</h2>
-
-<form action="/presents/new" method="post">
-    <label>Present name:</label>
-    <input required type="text" name="name" placeholder="Fancy phone">
-    <label>Link to the image:</label>
-    <input type="text" name="image" placeholder="https://external-content.duckduckgo.com...">
-    <label>Price:</label>
-    <input type="number" name="price" placeholder="20">
-    <label>Recipient:</label>
-    <input required type="text" name="recipient" placeholder="Mum">
-    <label>Description:</label>
-    <input type="text" name="description" placeholder="The newest iPhone on the market.">
-    <button type="submit">Create</button>
-</form>
+<div id="new-present-page" class="page">
+    <img class="grinch-pic" src="/images/new_present.png" alt="Grinch picture">
+    <div class="new-present-content">
+        <h1>New Present</h1>
+        <form action="/presents/new" method="post">
+            <label>Present name:</label>
+            <input required type="text" name="name" placeholder="Fancy phone">
+            <label>Link to the image:</label>
+            <input type="text" name="image" placeholder="https://external-content.duckduckgo.com...">
+            <label>Price:</label>
+            <input type="number" name="price" placeholder="20">
+            <label>Recipient:</label>
+            <input required type="text" name="recipient" placeholder="Mum">
+            <label>Description:</label>
+            <input type="text" name="description" placeholder="The newest iPhone on the market.">
+            <button type="submit" class="go-back-btn">Create</button>
+        </form>
+    </div>
+</div>
