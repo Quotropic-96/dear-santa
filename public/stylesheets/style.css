@@ -191,3 +191,74 @@ nav a {
   border: 0;
   align-self: center;
 }
+
+/* Media querys */
+@media (max-width: 600px) {
+  /* Layout */
+  nav {
+    justify-content: space-evenly;
+  }
+  /* Home page */
+  #home-page {
+    background-size: cover;
+    background-position: center;
+  }
+  #home-page h1 {
+    font-size: 3rem;
+  }
+  .intro-text {
+    font-size: 1.3rem;
+    margin: 10%;
+  }
+  /* List Page */
+  .grinch-pic {
+    display: none;
+  }
+  #presents-list-page .list-content{
+    padding: 0 10px;
+  }
+  #presents-list-page .list-content h1{
+    font-size: 2rem;
+  }
+  #presents-list-page .list-content form {
+    flex-direction: column;
+  }
+  #presents-list-page .list-content form input {
+    width: 90%;
+  }
+  #presents-list-page .list-content .present-list {
+    justify-content: space-around;
+  }
+  /* Search Page */
+  #search-page .footer {
+    width: 100vw;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  /* Deatil Page */
+  #detail-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail-title {
+    width: 100%;
+    align-items: center;
+    height: 50%;
+    margin-bottom: 0;
+  }
+  .detail-title img {
+    height: 85%;
+  }
+  .detail-content {
+    width: 90%;
+    height: 40%;
+    margin: 0;
+    padding: 10px;
+  }
+  /* New Present Page */
+  .new-present-content {
+    width: 100%;
+  }
+}
